@@ -1,14 +1,15 @@
-> [ir a indice](https://github.com/Continuum4/Guias-rapidas/blob/master/README.md)
+---
+layout: post
+title: Configurando OPENSSH
+---
 
-# CONFIGURAR OPENSSH#
 
-
-### Instalamos el servidor OpenSSH con el comando:
+ Instalamos el servidor OpenSSH con el comando:
 
      sudo yum install openssh-server
 
 
-### Configurar SSH
+## Configurar SSH
 
 Editamos el archivo 
 
@@ -35,7 +36,7 @@ Para que el servidor OpenSSH inicie de forma automática.
     sudo chkconfig sshd on
 
 
-### Creando usuarios para SSH
+## Creando usuarios para SSH
 
 Para conectarnos de forma remota vamos a crear un nuevo usuario.
 
@@ -44,7 +45,7 @@ Para conectarnos de forma remota vamos a crear un nuevo usuario.
     sudo passwd userpublico
 
 
-### Configurar el Firewall
+## Configurar el Firewall
 
 Abrimos el puerto que cambiamos.
 
@@ -55,7 +56,7 @@ Y reiniciamos el Firewall.
     sudo firewall-cmd --reload
 
 
-### Probar conexión SSH
+## Probar conexión SSH
 
 Desde otra maquina ejecutamos este comando para ingresar remotamente con el nuevo usuario, donde 192.168.1.20 es la IP del servidor OpenSSH.
 
