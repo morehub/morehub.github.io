@@ -4,6 +4,9 @@ title: Configurando OPENSSH
 ---
 
 
+> Configuracion rapida para acceder a SSH
+
+
  Instalamos el servidor OpenSSH con el comando:
 
      sudo yum install openssh-server
