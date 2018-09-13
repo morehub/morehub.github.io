@@ -7,4 +7,4 @@ Para mas información
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ca.morenos@protonmail.com](mailto:email@domain.com)
