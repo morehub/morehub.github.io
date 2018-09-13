@@ -16,6 +16,7 @@ Generamos una instancia con el comando AB
     ab -k -r -n 1000000 -c1000 -H 'Accept-Encoding: gzip.deflate' -g test.csv http://192.168.226.101/
 
 -n = numero de solicitudes 
+
 -c = cantidad de conexiones recurrentes.
 
 Monitoriamos con top la performance de las solicitudes.
@@ -23,7 +24,8 @@ Monitoriamos con top la performance de las solicitudes.
 
 # Instancia con Estress
 
-[stress](https://rpmfind.net/linux/rpm2html/search.php?query=stress)
+[RPM stress](https://rpmfind.net/linux/rpm2html/search.php?query=stress)
+
 Para generar una sobrecarga de memoria de los servidores utilizaremos la herramienta llamadas stress. 
 La cual nos permite realizar diferentes pruebas que generan hilos de procesos saturando la memoria del equipo.
 Para poder monitorear la instancias usamos los comando uptime y free :
