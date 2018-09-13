@@ -31,7 +31,7 @@ Monitoriamos con top la performance de las solicitudes.
 
 # Instancia con Estress
 
-![RPM stress](https://rpmfind.net/linux/rpm2html/search.php?query=stress)
+[RPM stress](https://rpmfind.net/linux/rpm2html/search.php?query=stress)
 
 Para generar una sobrecarga de memoria de los servidores utilizaremos la herramienta llamadas stress. 
 La cual nos permite realizar diferentes pruebas que generan hilos de procesos saturando la memoria del equipo.
