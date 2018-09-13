@@ -6,7 +6,7 @@ title: Midiendo performance de servidores.
 > Para medir la performance de memoria en servidores mediante CLI, se pueden crear instancias con una herramienta de apache llamada ab. La cual nos permite simular la solicitud simultanea de múltiples usuarios contra el servidor.
 
 
-#Instancia con apache
+# Instancia con apache
 
 El entorno fue creado en un servidor web con el sistema en carga baja de trabajo, como se puede visualizar con el comando top .
 
@@ -21,7 +21,7 @@ Generamos una instancia con el comando AB
 Monitoriamos con top la performance de las solicitudes.
 
 
-#Instancia con Estress
+# Instancia con Estress
 
 [stress](https://rpmfind.net/linux/rpm2html/search.php?query=stress)
 Para generar una sobrecarga de memoria de los servidores utilizaremos la herramienta llamadas stress. 
