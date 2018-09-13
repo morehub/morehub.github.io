@@ -5,6 +5,7 @@ permalink: /about/
 ---
 # Entregando mi grano de arena al conocimiento libre.
 
+[arquetipomatriz]
 Hola , Este blog es un almacen de viejos apuntes. 
 Espero que algun articulo te sea de utilidad.
 
