@@ -20,9 +20,13 @@ Generamos una instancia con el comando AB
 -c = cantidad de conexiones recurrentes.
 
     ab -k -r -n 1000000 -c1000 -H 'Accept-Encoding: gzip.deflate' -g test.csv http://192.168.226.101/
+    
+  [ab -k -r -n 1000000 -c1000 -H 'Accept-Encoding: gzip.deflate' -g test.csv http://192.168.226.101/](/ass/m2.png "ab")
 
 
 Monitoriamos con top la performance de las solicitudes.
+
+[top](/ass/m3.png "top")
 
 
 # Instancia con Estress
@@ -38,16 +42,33 @@ En este caso tenemos el sistema con carga de baja de trabajo.
 
     watch uptime
     
+[uptime](/ass/m6.png "uptime")
+    
 Free nos permite saber el uso de la memoria libre y swap de forma continua. 
  
     watch free
+
+[free](/ass/m5.png "free")
+
     
 Ejecutamos el comando de stress
 
-stress -m 1000 -t 120s
-
+    stress -m 1000 -t 120s
+    
 -m = hilos de trabajo 
+
 -t = segundos
+
+Visualizamos la carga de trabajo
+
+[loadmemo](/ass/m7.png "stress")
+
+[loadmemo](/ass/m8.png "top")
+
+
+
+
+
     
     
 
