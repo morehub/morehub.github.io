@@ -2,8 +2,9 @@
 layout: post
 title: Ejemplos forwarding a puerto 22
 ---
+> Ejemplos de forwarding
 
-Que deberias saber antes : 
+que deberias saber antes de configurar:
 
 > semange port
 
