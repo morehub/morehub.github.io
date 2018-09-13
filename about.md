@@ -6,7 +6,8 @@ permalink: /about/
 ![arquetipomatriz](/images/photo_2018-08-29_15-45-49.jpg)
 
 
-Hola , Este blog es un almacen de viejos apuntes. 
+Hola , Este blog de pruebas y almacen de viejos apuntes. 
+
 Espero que algun articulo te sea de utilidad.
 
 ## Contact me
