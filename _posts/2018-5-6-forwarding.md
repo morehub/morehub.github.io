@@ -47,30 +47,30 @@ Que deberias saber antes :
     
  > Agregar puerto nuevo a ssh puerto 22
 
-semanage port -a -t ssh_port_t -p tcp 123
+    semanage port -a -t ssh_port_t -p tcp 123
 
 > Agregar port forwarding 
 
     firewall-cmd --permanent --zone=work --add-forward-port=port=123:proto=tcp:toport=22
 
-> Conectar con netcat 
+> probar la conexion con netcat 
 
     nc 192.168.122.16 123
     SSH-2.0-OpenSSH_6.6.1
 
-> trabajando con richrules
+> trabajar con richrules
 
     man firewalld.richlanguage
     
-> ejemplo de una richrules
-
     rule family="ipv6" source address="1:2:3:4:6::" forward-port to-addr="1::2:3:4:7" to-port="4012" protocol="tcp" port="4011"
 
  ___
  
- ### Reedirigir puerto 456 a 22
+## EJEMPLO DE FORWARDING
 
     firewall-cmd --permanent --zone=work --add-rich-rule='rule family="ipv4" source address=192.168.122.100/24 forward-port     port="456" protocol="tcp" to-port="22"'
+
+realizar conexion a al nuevo puerto 
 
     nc 192.168.122.16 456
     SSH-2.0-OpenSSH_6.6.1
