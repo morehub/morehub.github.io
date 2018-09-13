@@ -49,4 +49,4 @@ CREACION DE REPOSITORIOS
     yum repolist
     
 
--------------------------------------------------------------------------[ir a la entrada del blog](morehub.github.com)
+------------------------------------------------------------------------- > [ir a la entrada del blog](morehub.github.com)
