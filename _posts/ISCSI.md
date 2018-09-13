@@ -1,14 +1,15 @@
-> [ir a indice](https://github.com/Continuum4/Guias-rapidas/blob/master/README.md)
 
 
-# ISCSI
-> CONFIGURACION DE ISCSI EN CENTOS
+---
+layout: post
+title: ISCSI
+---
 
-### SABER SOBRE MIS PARTICIONES
+SABER SOBRE MIS PARTICIONES
 
-fdisk -l
+    fdisk -l
 
-### CREAR PARTICION 
+# CREAR PARTICION 
 
 ```
 fdisk /dev/vdb 
@@ -50,19 +51,19 @@ Orden (m para obtener ayuda): w
 Llamando a ioctl() para volver a leer la tabla de particiones.
 Se están sincronizando los discos.
 ```
-### CREACION DE VOLUMEN 
+CREACION DE VOLUMEN 
 
     partprobe -s
  
- > CREANDO VOLUMEN DE GRUPO
+CREANDO VOLUMEN DE GRUPO
  
     vgcreate vg1 /dev/vdb1
  
- > CREANDO VOLUMEN LOGICO QUE UTILIZE TODO EL ESPACIO
+CREANDO VOLUMEN LOGICO QUE UTILIZE TODO EL ESPACIO
  
     lvcreate -n lv01 vg1 -l 100%FREE
     
- > VERIFICANDO EL VOLUMEN CREADO
+VERIFICANDO EL VOLUMEN CREADO
  
  ```
  lvs
@@ -73,21 +74,21 @@ Se están sincronizando los discos.
   lv01 vg1     -wi-a----- 496,00m 
   ```
 
-### INSTALANDO TARGET EN SERVIDOR HOST
+## INSTALANDO TARGET EN SERVIDOR HOST
 
     yum install targetcli
 
-### INICIAR TARGET 
+INICIAR TARGET 
 
     targetcli
 
-### CREANDO BLOCKDEVICE 
+## CREANDO BLOCKDEVICE 
  ```
 /> backstores/block create datos /dev/vg1/lv01 
 Created block storage object datos using /dev/vg1/lv01. 
  ```
 
-### CREAR IQN 
+## CREAR IQN 
  ```
 /> iscsi/ create iqn.2017-08.com.example:server1
 Created target iqn.2017-08.com.example:server1.
@@ -96,18 +97,18 @@ Global pref auto_add_default_portal=true
 Created default portal listening on all IPs (0.0.0.0), port 3260.
  ```
 
-### CREAR ACL PARA HABILITAR QUIEN PUEDE LEER ESTE BLOCKDEVICE
+## CREAR ACL PARA HABILITAR QUIEN PUEDE LEER ESTE BLOCKDEVICE
  ```
 /> iscsi/iqn.2017-08.com.example:server1/tpg1/acls create iqn.2017-08.com.example.server2
 Created Node ACL for iqn.2017-08.com.example.server2
  ```
-### CREANDO LUNS
+## CREANDO LUNS
  ```
 /> iscsi/iqn.2017-08.com.example:server1/tpg1/luns create /backstores/block/datos 
 Created LUN 0.
 Created LUN 0->0 mapping in node ACL iqn.2017-08.com.example.server2
  ```
-### ASIGNANDO NETWORK PORTALS (IP DEL SERVIDOR HOST)
+## ASIGNANDO NETWORK PORTALS (IP DEL SERVIDOR HOST)
  ```
 /> iscsi/iqn.2017-08.com.example:server1/tpg1/portals/ delete 0.0.0.0 3260
 Deleted network portal 0.0.0.0:3260
@@ -116,13 +117,13 @@ Deleted network portal 0.0.0.0:3260
 Using default IP port 3260
 Created network portal 192.168.122.16:3260.
  ```
-### VERIFICANDO CONFIGURACION
+## VERIFICANDO CONFIGURACION
 
-> CON CAT 
+ CON CAT 
  ```
 cat /etc/target/saveconfig.json
  ```
-> CON TARGET
+ CON TARGET
  ```
 targetcli ls
 
@@ -146,7 +147,7 @@ o- / ...........................................................................
   o- loopback ..................................................................................... [Targets: 0]
  
  ```
-### HABILITANDO FIREWALL
+## HABILITANDO FIREWALL
 
  ```
 firewall-cmd --permanent --add-port=3260/tcp
@@ -170,7 +171,7 @@ public (active)
   rich rules: 
  ```
  
- ### INICIANDO SERVICIOS 
+ ## INICIANDO SERVICIOS 
  
   ```
 systemctl enable target
@@ -190,20 +191,20 @@ ago 28 20:13:29 x1.example.com systemd[1]: Starting Restore LIO kernel target co
 ago 28 20:13:29 x1.example.com systemd[1]: Started Restore LIO kernel target configuration.
 
 ```
-### CONFIGURANDO EN CLIENTE
+## CONFIGURANDO EN CLIENTE
 
-> INSTALANDO CLIENTE 
+ INSTALANDO CLIENTE 
 
     yum install iscsi-initiator-utils
 
 
-> COPIAMOS LA IQN DE LA ACL DEL HOST
+COPIAMOS LA IQN DE LA ACL DEL HOST
 
     vim /etc/iscsi/initiatorname.iscsi 
 
     InitiatorName=iqn.2017-08.com.example.server2
 
-### REINICIAMOS EL SERVICIO 
+REINICIAMOS EL SERVICIO 
 
 ```
 systemctl enable iscsi
@@ -211,20 +212,19 @@ systemctl restart iscsi
 systemctl status iscsi
 
 ```
-
-### DESCUBRIR TARGET
+DESCUBRIR TARGET
 
 > saber sobre ejemplos de target en apartado examples
   
     man iscsiadm
     
-### DESCUBRIENDO TARGET 
+ DESCUBRIENDO TARGET 
 
     iscsiadm --mode discoverydb --type sendtargets --portal 192.168.122.16 --discover
 
     192.168.122.16:3260,1 iqn.2017-08.com.example:server1
 
-### HACER LOGIN
+HACER LOGIN
 
 ```
 iscsiadm --mode node --targetname iqn.2017-08.com.example:server1 --portal 192.168.122.16:3260 --login
@@ -232,7 +232,7 @@ Logging in to [iface: default, target: iqn.2017-08.com.example:server1, portal: 
 Login to [iface: default, target: iqn.2017-08.com.example:server1, portal: 192.168.122.16,3260] successful.
 
 ```
-### VERIFICAR ISCSI
+VERIFICAR ISCSI
 
 ```
 iscsiadm -m session -P3 | grep -i attach
@@ -240,7 +240,7 @@ lsscsi
 
 ```
 
-### CREANDO DIRECTORIO
+CREANDO DIRECTORIO
 
 ```
 mkdir /iscsi-datos
@@ -248,18 +248,18 @@ mkfs.xfs /dev/sda
 
 ```
 
-### MOSTRANDO UID
+MOSTRANDO UID
 
 ```
 blkid | grep sda
 echo "UUID="69d79151-9b6a-452b-801c-c243070b29ec" /iscsi-datos xfs _netdev 0 0" >> /etc/fstab
 
 ```
-### MONTANDO 
+ MONTANDO 
 
     mount -a
 
-### VERIFICANDO 
+VERIFICANDO 
 
 ```
 df -h | grep iscsi
@@ -268,7 +268,7 @@ df -h | grep iscsi
 
 ```
 
-### DESMONTANDO Y DESLOGUEANDO
+ DESMONTANDO Y DESLOGUEANDO
 
 ```
 umount /iscsi-datos/
@@ -276,7 +276,7 @@ iscsiadm --mode node --targetname iqn.2017-08.com.example:server1 --portal 192.1
 
 ```
 
-### REINICIAMOS EL EQUIPO Y AL INICIAR VERIFICAMOS
+REINICIAMOS EL EQUIPO Y AL INICIAR VERIFICAMOS
 
 ```
 systemctl reboot
