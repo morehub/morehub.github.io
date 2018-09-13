@@ -20,58 +20,54 @@ Que deberias saber antes :
 > semanage
 
     man semanage-port
-___
 
-### LISTAS ACTIVAS
+> LISTAS ACTIVAS
 
     firewall-cmd --list-all
     firewall-cmd --list-all-zones
 
-### bloquear acceso a ssh
+> Bloquear acceso a ssh
 
     firewall-cmd --permanent --zone=public --remove-service=ssh
 
 
-### agregar firewall en zonas especificas
-
-remover firewall
+> Agregar firewall en zonas especificas y removerlas
 
     firewall-cmd --permanent --remove-source=192.168.4.0/24
     firewall-cmd --permanent --add-source=192.168.4.0/24 --zone=work
 
-### recargar firewall
+> Recargar firewall
 
     firewall-cmd --reload 
 
-### remover servicios
+> Remover servicios
 
     firewall-cmd --permanent --zone=work --remove-service=ssh
 
     
- ### agregar puerto nuevo a ssh puerto 22
+ > Agregar puerto nuevo a ssh puerto 22
 
 semanage port -a -t ssh_port_t -p tcp 123
 
-### agregar port forwarding 
+> Agregar port forwarding 
 
     firewall-cmd --permanent --zone=work --add-forward-port=port=123:proto=tcp:toport=22
 
-
-
-### Conectar con netcat 
+> Conectar con netcat 
 
     nc 192.168.122.16 123
     SSH-2.0-OpenSSH_6.6.1
 
-### trabajando con richrules
+> trabajando con richrules
 
     man firewalld.richlanguage
-
-### EXAMPLE 5
+    
+> ejemplo de una richrules
 
     rule family="ipv6" source address="1:2:3:4:6::" forward-port to-addr="1::2:3:4:7" to-port="4012" protocol="tcp" port="4011"
 
-
+ ___
+ 
  ### Reedirigir puerto 456 a 22
 
     firewall-cmd --permanent --zone=work --add-rich-rule='rule family="ipv4" source address=192.168.122.100/24 forward-port     port="456" protocol="tcp" to-port="22"'
