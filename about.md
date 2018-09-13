@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-# Entregando mi grano de arena al conocimiento libre.
 
 [arquetipomatriz]
 Hola , Este blog es un almacen de viejos apuntes. 
