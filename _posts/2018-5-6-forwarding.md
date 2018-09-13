@@ -1,4 +1,7 @@
-> [ir a indice](https://github.com/Continuum4/Guias-rapidas/blob/master/README.md)
+---
+layout: post
+title: Configurando un forwarding a puerto 22
+---
 
 ### saber los puertos
 
