@@ -3,12 +3,13 @@ layout: post
 title: Ejemplos forwarding a puerto 22
 ---
 
-### saber los puertos
+Que deberias saber antes : 
+
+> semange port
 
     semanage port -l | grep ssh
-
-# Firewalld
-## saber sobre firewalld
+    
+> Firewalld 
 
     man -k firewall
 
@@ -16,7 +17,7 @@ title: Ejemplos forwarding a puerto 22
 
     firewall-cmd --help | grep forwar
     
-   ## saber sobre semanage
+> semanage
 
     man semanage-port
 ___
@@ -32,6 +33,7 @@ ___
 
 
 ### agregar firewall en zonas especificas
+
 remover firewall
 
     firewall-cmd --permanent --remove-source=192.168.4.0/24
