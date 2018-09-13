@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Repos locales en RHEL
+---
 
 > Creacion de repositorio locales en RHEL
 
@@ -47,6 +48,6 @@ CREACION DE REPOSITORIOS
 ### verificamos con el comando en la consola#
 
     yum repolist
+___
     
-
-------------------------------------------------------------------------- > [ir a la entrada del blog](morehub.github.com)
+ [IR A LA ENTRADA DEL BLOG](morehub.github.io)
