@@ -6,18 +6,19 @@ title: Midiendo performance de servidores.
 > Para medir la performance de memoria en servidores mediante CLI, se pueden crear instancias con una herramienta de apache llamada ab. La cual nos permite simular la solicitud simultanea de múltiples usuarios contra el servidor.
 
 
-# Instancia con apache
+# Instancia con Apache
 
 El entorno fue creado en un servidor web con el sistema en carga baja de trabajo, como se puede visualizar con el comando top .
 
 
 Generamos una instancia con el comando AB
 
-    ab -k -r -n 1000000 -c1000 -H 'Accept-Encoding: gzip.deflate' -g test.csv http://192.168.226.101/
-
 -n = numero de solicitudes 
 
 -c = cantidad de conexiones recurrentes.
+
+    ab -k -r -n 1000000 -c1000 -H 'Accept-Encoding: gzip.deflate' -g test.csv http://192.168.226.101/
+
 
 Monitoriamos con top la performance de las solicitudes.
 
