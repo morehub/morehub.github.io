@@ -1,7 +1,10 @@
-> [ir a indice](https://github.com/Continuum4/Guias-rapidas/blob/master/README.md)
+---
+layout: post
+title: Repos locales en RHEL
 
+> Creacion de repositorio locales en RHEL
 
-# CREACION DE REPOSITORIOS
+CREACION DE REPOSITORIOS
 
 ### creacion de directorio
 
@@ -44,3 +47,6 @@
 ### verificamos con el comando en la consola#
 
     yum repolist
+    
+
+-------------------------------------------------------------------------[ir a la entrada del blog](morehub.github.com)
