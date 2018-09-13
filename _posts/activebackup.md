@@ -1,41 +1,44 @@
-> [ir a indice](https://github.com/Continuum4/Guias-rapidas/blob/master/README.md)
+---
+layout: post
+title: Creando network Team (active-backup)
+---
 
-# ACTIVEBACKUP-CENT0S
-
-En el archivo de teamd.conf del S.O puedes encontrar informacion y ejemplos de cada configuracion.
+> En el archivo de teamd.conf del S.O puedes encontrar informacion y ejemplos de cada configuracion.
 ___
 
-### CREACION INTERFAZ VIRTUAL
-###### Llamaremos nuestra interfaz virtual ossy1
+## CREACION INTERFAZ VIRTUAL
+ 
+
+Llamaremos nuestra interfaz virtual ossy1
  
 
      nmcli connection add type team con-name ossy1 ifname ossy1 config '{"runner": {"name": "activebackup"}}'
 
-### CONFIGURANDO IPS
-###### xxxx= _ip a agregar
+## CONFIGURANDO IPS
+> xxxx= _ip a agregar
 
     nmcli connection modify ossy1 ipv4.addresses x.x.x.x/24
 
-### ESPECIFICANDO CONEXION MANUAL
+ESPECIFICANDO CONEXION MANUAL
 
     nmcli connection modify ossy1 ipv4.method manual 
  
-### LIGANDO LAS INTERFACES ESCLAVAS A MAESTRAS
+LIGANDO LAS INTERFACES ESCLAVAS A MAESTRAS
 
-######  En este caso ens10 y ens11
+> En este caso ens10 y ens11
 
     nmcli connection add type team-slave con-name ossy1-slave1 ifname ens10 master ossy1
 
     nmcli connection add type team-slave con-name ossy1-slave2 ifname ens11 master ossy1
 
 
-### LEVANTANDO CONEXIONES
+LEVANTANDO CONEXIONES
 
     nmcli connection up ossy1-slave1
 
     nmcli connection up ossy1-slave2
 
-### VERIFICANDO ESTADO
+VERIFICANDO ESTADO
 
 ```
 
@@ -62,7 +65,7 @@ runner:
   active port: ens10
   ```
 
-> Script de configuraracion rapida :turtle:
+## Script de configuraracion rapida :turtle:
 
 ```
 
