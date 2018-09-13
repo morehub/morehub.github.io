@@ -10,6 +10,9 @@ title: Midiendo performance de servidores.
 
 El entorno fue creado en un servidor web con el sistema en carga baja de trabajo, como se puede visualizar con el comando top .
 
+[top](/performkance/Screenshot_2018-09-12 instancias de memoria.png)
+
+
 
 Generamos una instancia con el comando AB
 
