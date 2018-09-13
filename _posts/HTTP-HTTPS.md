@@ -1,4 +1,7 @@
-> [ir a indice](https://github.com/Continuum4/Guias-rapidas/blob/master/README.md)
+---
+layout: post
+title: CONFIGURANDO HTTP/HTTPS
+---
 
 # CONFIGURANDO HTTP
 
