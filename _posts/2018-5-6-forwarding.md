@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configurando un forwarding a puerto 22
+title: Ejemplos forwarding a puerto 22
 ---
 
 ### saber los puertos
