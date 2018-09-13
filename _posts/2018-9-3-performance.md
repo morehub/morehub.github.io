@@ -21,17 +21,17 @@ Generamos una instancia con el comando AB
 
     ab -k -r -n 1000000 -c1000 -H 'Accept-Encoding: gzip.deflate' -g test.csv http://192.168.226.101/
     
-  [ab -k -r -n 1000000 -c1000 -H 'Accept-Encoding: gzip.deflate' -g test.csv http://192.168.226.101/](/ass/m2.png "ab")
+ ![ab -k -r -n 1000000 -c1000 -H 'Accept-Encoding: gzip.deflate' -g test.csv http://192.168.226.101/](/ass/m2.png "ab")
 
 
 Monitoriamos con top la performance de las solicitudes.
 
-[top](/ass/m3.png "top")
+![top](/ass/m3.png "top")
 
 
 # Instancia con Estress
 
-[RPM stress](https://rpmfind.net/linux/rpm2html/search.php?query=stress)
+![RPM stress](https://rpmfind.net/linux/rpm2html/search.php?query=stress)
 
 Para generar una sobrecarga de memoria de los servidores utilizaremos la herramienta llamadas stress. 
 La cual nos permite realizar diferentes pruebas que generan hilos de procesos saturando la memoria del equipo.
@@ -42,13 +42,13 @@ En este caso tenemos el sistema con carga de baja de trabajo.
 
     watch uptime
     
-[uptime](/ass/m6.png "uptime")
+![uptime](/ass/m6.png "uptime")
     
 Free nos permite saber el uso de la memoria libre y swap de forma continua. 
  
     watch free
 
-[free](/ass/m5.png "free")
+![free](/ass/m5.png "free")
 
     
 Ejecutamos el comando de stress
@@ -61,9 +61,9 @@ Ejecutamos el comando de stress
 
 Visualizamos la carga de trabajo
 
-[loadmemo](/ass/m7.png "stress")
+![loadmemo](/ass/m7.png "stress")
 
-[loadmemo](/ass/m8.png "top")
+![loadmemo](/ass/m8.png "top")
 
 
 
