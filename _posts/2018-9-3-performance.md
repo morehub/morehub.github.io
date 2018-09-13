@@ -33,9 +33,9 @@ Monitoriamos con top la performance de las solicitudes.
 
 [RPM stress](https://rpmfind.net/linux/rpm2html/search.php?query=stress)
 
-Para generar una sobrecarga de memoria de los servidores utilizaremos la herramienta llamadas stress. 
-La cual nos permite realizar diferentes pruebas que generan hilos de procesos saturando la memoria del equipo.
-Para poder monitorear la instancias usamos los comando uptime y free :
+>Para generar una sobrecarga de memoria de los servidores utilizaremos la herramienta llamadas stress. 
+>La cual nos permite realizar diferentes pruebas que generan hilos de procesos saturando la memoria del equipo.
+>Para poder monitorear la instancias usamos los comando uptime y free :
 
 Uptime nos permite saber el % de la carga que esta teniendo el sistema cada 1,5 y 15 minutos.
 En este caso tenemos el sistema con carga de baja de trabajo.
@@ -53,11 +53,11 @@ Free nos permite saber el uso de la memoria libre y swap de forma continua.
     
 Ejecutamos el comando de stress
 
-    stress -m 1000 -t 120s
-    
 -m = hilos de trabajo 
 
 -t = segundos
+
+    stress -m 1000 -t 120s
 
 Visualizamos la carga de trabajo
 
