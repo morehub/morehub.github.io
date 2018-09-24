@@ -10,7 +10,7 @@ title: Midiendo performance de servidores
 
 El entorno fue creado en un servidor web con el sistema en carga baja de trabajo, como se puede visualizar con el comando top .
 
-![top](ass/m1.png "top")
+![top](/ass/m1.png "top")
 ___
 
 Generamos una instancia con el comando AB
@@ -26,7 +26,7 @@ Generamos una instancia con el comando AB
 
 Monitoriamos con top la performance de las solicitudes.
 
-![top](ass/m3.png "top")
+![top](/ass/m3.png "top")
 
 
 # Instancia con Estress
@@ -42,13 +42,13 @@ En este caso tenemos el sistema con carga de baja de trabajo.
 
     watch uptime
     
-![uptime](ass/m6.png "uptime")
+![uptime](/ass/m6.png "uptime")
     
 Free nos permite saber el uso de la memoria libre y swap de forma continua. 
  
     watch free
 
-![free](ass/m5.png "free")
+![free](/ass/m5.png "free")
 
     
 Ejecutamos el comando de stress
@@ -61,9 +61,9 @@ Ejecutamos el comando de stress
 
 Visualizamos la carga de trabajo
 
-![loadmemo](ass/m7.png "stress")
+![loadmemo](/ass/m7.png "stress")
 
-![loadmemo](ass/m8.png "top")
+![loadmemo](/ass/m8.png "top")
 
 
 
