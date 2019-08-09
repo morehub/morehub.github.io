@@ -5,7 +5,7 @@ title: Algunas cosas sobre TCP/IP
 
 > Recopilacion de informacion variada sobre el protocolo TCP/IP encontrada en la red.
 
-![LAYER](ass/slide-3.jpg)
+![LAYER](room92.github.io/ass/slide-3.jpg)
 
 # INDICE RAPIDO
 
