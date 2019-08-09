@@ -3,7 +3,9 @@ layout: post
 title: Algunas cosas sobre TCP/IP
 ---
 
-> Recopilacion de informacion variada sobre el protocolo TCP/IP encontrada en la red
+> Recopilacion de informacion variada sobre el protocolo TCP/IP encontrada en la red.
+
+![LAYER](ass/slide-3.jpg)
 
 # INDICE RAPIDO
 
@@ -14,48 +16,9 @@ title: Algunas cosas sobre TCP/IP
 - [Protocolo de acceso a la red]()
 
 
-
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
 ## GLOSARIO
-A
-A
-A
-A
+
+
+
 
 
