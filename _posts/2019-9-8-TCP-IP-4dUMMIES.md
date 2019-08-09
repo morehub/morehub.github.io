@@ -43,9 +43,15 @@ title: Algunas cosas sobre TCP/IP
 
 > Protocolo de alto nivel
 
-> Sistema cliente y servidor por el cual se produce el intercambio de datos y la ejecución de comandos.
+> Sistema cliente y servidor, por el cual se produce el intercambio de datos y la ejecución de comandos.
 
-> es cercano a la comunicacion humana y usa textos claros preferentemente sin codificación.
+> Es cercano a la comunicacion humana y usa textos claros preferentemente sin codificación.
+
+## Socket TCP
+
+1. Un proceso abre un socket TCP en escucha por el n° de puerto xxxx, el servidor esta a la espera de una conexión.
+2. El cliente Abre un socket conectandose al servidor haciendo referencia a la IP y Puerto.
+3. El socket puede ser visto por el cliente y servidor. Se crea un archivo de lectura y escritura entre ambos.
 
 
 
