@@ -14,7 +14,7 @@ title: Algunas cosas sobre TCP/IP
 # INDICE RAPIDO
 
 - [Glosario](#glosario)
-- [Protocolo de Aplicación]()
+- [Protocolo de Aplicación](#Protocolo de aplicación)
 - [Protocolo de Transporte]()
 - [Protocolo de Internet]()
 - [Protocolo de acceso a la red]()
@@ -31,6 +31,23 @@ title: Algunas cosas sobre TCP/IP
 > Comunica 2 procesos a travez de la red.
 
 > Usa algun protocolo de transporte.
+
+
+#### Proceso
+> Instancia de ejecución de un programa.
+
+> Puede existir un programa con varios procesos.
+
+
+## Protocolo de aplicación
+
+> Protocolo de alto nivel
+
+> Sistema cliente y servidor por el cual se produce el intercambio de datos y la ejecución de comandos.
+
+> es cercano a la comunicacion humana y usa textos claros preferentemente sin codificación.
+
+
 
 
 
