@@ -13,6 +13,49 @@ title: Algunas cosas sobre TCP/IP
 - [Protocolo de Internet]()
 - [Protocolo de acceso a la red]()
 
+
+
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
 ## GLOSARIO
+A
+A
+A
+A
 
 
