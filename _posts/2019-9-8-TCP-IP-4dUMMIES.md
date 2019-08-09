@@ -14,7 +14,7 @@ title: Algunas cosas sobre TCP/IP
 # INDICE RAPIDO
 
 1. [Glosario](#glosario)
-2. [Protocolo de Aplicación](#protocolo de aplicación)
+2. [Protocolo de Aplicación](#aplicación)
 3. [Protocolo de Transporte]()
 4. [Protocolo de Internet]()
 5. [Protocolo de acceso a la red]()
@@ -39,7 +39,7 @@ title: Algunas cosas sobre TCP/IP
  - Puede existir un programa con varios procesos.
 
 
-## Protocolo de aplicación
+## Aplicación
 
 - Protocolo de alto nivel
 
