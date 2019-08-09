@@ -8,7 +8,7 @@ title: Algunas cosas sobre TCP/IP
  
 LINK DE REPO 
 
-{r} [TCP/IP](https://github.com/room29/post/blob/master/TCP-IP.md)
+ [TCP/IP](https://github.com/room29/post/blob/master/TCP-IP.md)
 
 
 
