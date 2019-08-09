@@ -22,12 +22,12 @@ title: Algunas cosas sobre TCP/IP
 
 ## GLOSARIO
 
-### PROTOCOLO
+#### Protocolo
 > Secuencia de pasos y convenciones.
 
 > Acuerdo para llevar comunicación.
 
-### Socket
+#### Socket
 > Comunica 2 procesos a travez de la red.
 
 > Usa algun protocolo de transporte.
