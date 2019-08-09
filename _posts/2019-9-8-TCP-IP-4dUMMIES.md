@@ -13,11 +13,11 @@ title: Algunas cosas sobre TCP/IP
 
 # INDICE RAPIDO
 
-- [Glosario](#glosario)
-- [Protocolo de Aplicación](#Protocolo de aplicación)
-- [Protocolo de Transporte]()
-- [Protocolo de Internet]()
-- [Protocolo de acceso a la red]()
+1. [Glosario](#glosario)
+2. [Protocolo de Aplicación](#Protocolo de aplicación)
+3. [Protocolo de Transporte]()
+4. [Protocolo de Internet]()
+5. [Protocolo de acceso a la red]()
 
 
 ## GLOSARIO
