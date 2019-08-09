@@ -23,29 +23,29 @@ title: Algunas cosas sobre TCP/IP
 ## GLOSARIO
 
 #### Protocolo
-> Secuencia de pasos y convenciones.
+>>> Secuencia de pasos y convenciones.
 
-> Acuerdo para llevar comunicación.
+>>> Acuerdo para llevar comunicación.
 
 #### Socket
-> Comunica 2 procesos a travez de la red.
+>>> Comunica 2 procesos a travez de la red.
 
-> Usa algun protocolo de transporte.
+>>> Usa algun protocolo de transporte.
 
 
 #### Proceso
-> Instancia de ejecución de un programa.
+>>> Instancia de ejecución de un programa.
 
-> Puede existir un programa con varios procesos.
+>>> Puede existir un programa con varios procesos.
 
 
 ## Protocolo de aplicación
 
-> Protocolo de alto nivel
+>>> Protocolo de alto nivel
 
-> Sistema cliente y servidor, por el cual se produce el intercambio de datos y la ejecución de comandos.
+>>> Sistema cliente y servidor, por el cual se produce el intercambio de datos y la ejecución de comandos.
 
-> Es cercano a la comunicacion humana y usa textos claros preferentemente sin codificación.
+>>> Es cercano a la comunicacion humana y usa textos claros preferentemente sin codificación.
 
 ## Socket TCP
 
