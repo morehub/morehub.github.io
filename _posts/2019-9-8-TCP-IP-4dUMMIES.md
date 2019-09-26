@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Algunas cosas sobre TCP/IP
+title: PYTHON
 ---
 
 
-> Recopilacion de informacion variada sobre el protocolo TCP/IP encontrada en la red.
+> Recopilacion de informacion sobre PYTHON.
  
 LINK DE REPO 
 
- [TCP/IP](https://github.com/room29/post/blob/master/TCP-IP.md)
+ [PY](https://github.com/room29/python)
 
 
 
